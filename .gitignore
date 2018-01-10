@@ -1,0 +1,31 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.exe
+*.msi
+
+# OS X
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+*.app/
+
+# Editors
+.vscode/
+.vs/
+*.suo
+*.user
+
+# Vagrant
+.vagrant/
+
+# Build Folders
+dist
+dist-site
