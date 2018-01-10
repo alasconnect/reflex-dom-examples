@@ -15,7 +15,7 @@ The first time you check out the project, you will have to initialize git submod
 + `git submodule init`
 + `git submodule update`
 
-### Getting Started Example
+## Getting Started Example
 
 + `vagrant up`
 + `vagrant ssh`
@@ -33,3 +33,12 @@ The first time you check out the project, you will have to initialize git submod
   + default.nix
   + main.cabal
   + Makefile
+
+## Building and running an example
+
+Each example is its own bubble. The only common thread is a dependency on the root level submodule for reflex platform. By default the following steps should allow you to build and serve an example. In the event that the `Makefile` for the example has been altered you'll need to look at the individual example's `README.md` for details on building and running.
+
++ `cd /src/THE_EXAMPLE`
++ `make build-site`
++ `make serve-site`
++ On the host machine visit: `http://172.28.128.12:8888`
