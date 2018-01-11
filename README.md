@@ -15,14 +15,14 @@ The first time you check out the project, you will have to initialize git submod
 + `git submodule init`
 + `git submodule update`
 
-## Getting Started Example
+## Getting Started
 
 + `vagrant up`
 + `vagrant ssh`
 + `cd /src/base`
 + `make build-site`
 + `make serve-site`
-+ On the host machine visit: `http://172.28.128.12:8888`
++ On the host machine visit: `http://172.28.128.21:8888`
 
 ## Creating a new example
 
@@ -42,4 +42,4 @@ Each example is its own bubble. The only common thread is a dependency on the ro
 + `cd /src/THE_EXAMPLE`
 + `make build-site`
 + `make serve-site`
-+ On the host machine visit: `http://172.28.128.12:8888`
++ On the host machine visit: `http://172.28.128.21:8888`

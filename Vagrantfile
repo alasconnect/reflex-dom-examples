@@ -1,7 +1,7 @@
 Vagrant.configure('2') do |config|
   config.vm.box = 'bento/centos-7.4'
   config.vm.hostname = 'reflex-examples-dev'
-  config.vm.network 'private_network', ip: '172.28.128.12'
+  config.vm.network 'private_network', ip: '172.28.128.21'
 
   config.vm.provider 'virtualbox' do |v|
     v.memory = 4096
