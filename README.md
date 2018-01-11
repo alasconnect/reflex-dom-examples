@@ -26,6 +26,7 @@ The first time you check out the project, you will have to initialize git submod
 
 ## Creating a new example
 
++ Create a Git branch for your new example. ('git checkout -b <example_name>')
 + Create a folder for your new example at the root of this project.
 + Copy the contents of `base` into the new folder.
 + Delete `packages.nix` since it is generated for us by `make build-site`.
