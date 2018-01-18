@@ -1,6 +1,6 @@
 ## Building and running
 
-From within this directory (reflex-dom-examples/base).
+From within this directory (reflex-dom-examples/chartist).
 
 + `make build-site`
 + `make serve-site`

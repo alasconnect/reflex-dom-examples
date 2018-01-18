@@ -10,8 +10,10 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Layout
-  build-depends:       base
+  build-depends:       aeson
+                     , base
                      , containers
+                     , ghcjs-base
                      , ghcjs-dom
                      , lens
                      , reflex
