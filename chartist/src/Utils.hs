@@ -9,3 +9,4 @@ custFieldLabelModifier i = f . drop i
     f [] = [] -- empty case
     f [c] = [c] -- just 1 Char case
     f (x:xs) = Data.Char.toLower x : xs
+    
