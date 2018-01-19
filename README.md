@@ -26,7 +26,7 @@ The first time you check out the project, you will have to initialize git submod
 
 ## Creating a new example
 
-+ Create a Git branch for your new example. ('git checkout -b <example_name>')
++ Create a Git branch for your new example. `git checkout -b <example_name>`
 + Create a folder for your new example at the root of this project.
 + Copy the contents of `base` into the new folder.
 + Delete `packages.nix` since it is generated for us by `make build-site`.
@@ -34,12 +34,13 @@ The first time you check out the project, you will have to initialize git submod
   + default.nix
   + main.cabal
   + Makefile
++ Replace `base` in line 3 of reflex-dom-examples/<example_name>/READEME.md to `<example_name>`
 
 ## Building and running an example
 
 Each example is its own bubble. The only common thread is a dependency on the root level submodule for reflex platform. By default the following steps should allow you to build and serve an example. In the event that the `Makefile` for the example has been altered you'll need to look at the individual example's `README.md` for details on building and running.
 
-+ `cd /src/THE_EXAMPLE`
++ `cd /src/<example_name>`
 + `make build-site`
 + `make serve-site`
 + On the host machine visit: `http://172.28.128.21:8888`
