@@ -1,5 +1,5 @@
-{ mkDerivation, aeson, base, containers, ghcjs-base, ghcjs-dom
-, lens, reflex, reflex-dom, stdenv, text, time
+{ mkDerivation, aeson, base, bytestring, containers, ghcjs-base
+, ghcjs-dom, lens, reflex, reflex-dom, stdenv, text, time
 }:
 mkDerivation {
   pname = "chartist";
@@ -8,8 +8,8 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    aeson base containers ghcjs-base ghcjs-dom lens reflex reflex-dom
-    text time
+    aeson base bytestring containers ghcjs-base ghcjs-dom lens reflex
+    reflex-dom text time
   ];
   executableHaskellDepends = [ base ];
   license = stdenv.lib.licenses.unfree;

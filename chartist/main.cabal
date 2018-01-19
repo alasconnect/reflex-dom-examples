@@ -12,6 +12,7 @@ library
   exposed-modules:     Layout
   build-depends:       aeson
                      , base
+                     , bytestring
                      , containers
                      , ghcjs-base
                      , ghcjs-dom
