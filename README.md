@@ -27,14 +27,13 @@ The first time you check out the project, you will have to initialize git submod
 ## Creating a new example
 
 + Create a Git branch for your new example. `git checkout -b <example_name>`
-+ Create a folder for your new example at the root of this project.
-+ Copy the contents of `base` into the new folder.
-+ Delete `packages.nix` since it is generated for us by `make build-site`.
-+ Replace all instances of `rfex-base` in the following files with the name you'd like for your example.
++ Create a copy of `base` at the root of this project and rename it `<example_name>`.
++ Delete `<example_name>/packages.nix` since it is generated for us by `make build-site`.
++ Replace all instances of `rfex-base` in the following files with `<example_name>`.
   + default.nix
   + main.cabal
   + Makefile
-+ Replace `base` in line 3 of reflex-dom-examples/<example_name>/READEME.md to `<example_name>`
++ Replace `base` in line 3 of reflex-dom-examples/<example_name>/README.md to `<example_name>`
 
 ## Building and running an example
 
